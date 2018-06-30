@@ -4,6 +4,10 @@
         - The logic must be in correct order. Or if this was seperate files, they had to be included / bundled in correct order
         - In a Vue.component, data must be a function returning an object with the data
         - Just like React, we need a key
+        - Both new Vue and Vue.component can have life cycle hooks
+            - All of them here: https://vuejs.org/v2/api/#Options-Lifecycle-Hooks
+            - See note on mounted and children mounted: https://vuejs.org/v2/api/#mounted
+        - We also do some API stuff at the bottom
 
 */
 
@@ -59,14 +63,55 @@ Vue.component('todo', {
                 }
             ]
         }
+    },
+    created: function () {
+        console.log('todo created');
+    },
+    mounted: function () {
+        console.log('todo mounted');
+    },
+    updated: function () {
+        console.log('todo updated');
+    },
+    destroyed: function () {
+        console.log('todo destroyed');
     }
 });
 
 // file
 
+var test = {
+    name: 'Henke'
+};
+
 var vm = new Vue({
     el: '#app',
     data: {
-        title: 'We are composing great things'
+        title: 'We are composing great things',
+        test: test
+    },
+    created: function () {
+        console.log('app created');
+    },
+    mounted: function () {
+        console.log('app mounted');
+    },
+    updated: function () {
+        console.log('app updated');
+    },
+    destroyed: function () {
+        console.log('app destroyed');
+    },
+    methods: {
+        changeName: function () {
+            this.test.name = 'Benke';
+        }
     }
+});
+
+console.log(test == vm.test);
+console.log(vm.$data.test == test);
+
+vm.$watch('test.name', function (newValue, oldValue) {
+    console.log(newValue, oldValue);
 });
