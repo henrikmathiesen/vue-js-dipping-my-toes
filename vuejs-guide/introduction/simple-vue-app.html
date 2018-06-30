@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue JS</title>
+    <!-- dev mode: 74.1 KB  -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <!-- prod mode: 30.3 KB!  -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min.js"></script> -->
+</head>
+
+<body>
+    <h1>Vue JS</h1>
+    <p>
+        We start simple, trying to use vue.js with as small footprint and as little tools as possible. We just drop in vue.js from
+        a CDN in a script tag and go. Using the compiler and runtime script.
+    </p>
+    <p>
+        At release, we would like to replace the dev version with the prod versionen, manually or using gulp.
+    </p>
+
+    <hr>
+
+    <h2>Simple Vue App</h2>
+    <p>
+        v- is called a directive
+    </p>
+
+    <div id="app">
+        <div>
+            <span v-bind:title="title">
+                {{ message }}
+            </span>
+        </div>
+        <div>
+            <button v-on:click="toggleIsVisible">Toggle visibility</button>
+            <span v-if="isVisible">
+                See me?
+            </span>
+        </div>
+        <div>
+            <ol>
+                <li v-for="todo in todos">{{ todo.text }}</li>
+            </ol>
+        </div>
+        <div>
+            <input type="text" v-model="message">
+        </div>
+        <div>
+            {{ '1 + 1 = ' + (1+1) }}
+        </div>
+    </div>
+
+    <script src="simple-vue-app.js"></script>
+</body>
+
+</html>
