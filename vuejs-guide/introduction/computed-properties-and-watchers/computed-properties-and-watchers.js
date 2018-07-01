@@ -46,8 +46,3 @@ var vm = new Vue({
         }
     }
 });
-
-
-// watch
-// watch on vm $
-// make note about angular and computed property
