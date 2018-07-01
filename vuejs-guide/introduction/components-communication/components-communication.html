@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Component Communication</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+<body>
+    <h1>Component Communication</h1>
+    
+    <div id="app">
+        <div v-if="selectedTodo">
+            You selected: {{ selectedTodo.text }}
+        </div>
+        <ol>
+            <todo-item v-for="t in todos" v-bind:todo="t" v-bind:key="t.id" v-on:todo-selected="onTodoSelected"></todo-item>
+            <!-- Could also do it like this: v-on:todo-selected="selectedTodo = $event" -->
+        </ol>
+        <div>
+            <button v-on:click="changeTextInLastTodo">Change the text in the last todo (for some reason)</button>
+        </div>
+    </div>
+
+    <script src="components-communication.js"></script>
+</body>
+</html>

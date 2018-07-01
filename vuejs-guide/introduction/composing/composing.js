@@ -11,6 +11,15 @@
         - Components should have a single root element, like the container div in 'todo'
         - We also do some API stuff at the bottom
 
+        - Can use slots as content projection / transclusion
+            - https://vuejs.org/v2/guide/components.html#Content-Distribution-with-Slots
+
+        - Using components as special elements like tr in a table
+            - https://vuejs.org/v2/guide/components.html#DOM-Template-Parsing-Caveats
+
+        - Dynamic component, interesting
+            - https://vuejs.org/v2/guide/components.html#Dynamic-Components
+
 */
 
 // file
