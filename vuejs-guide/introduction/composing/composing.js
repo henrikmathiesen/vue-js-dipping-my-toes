@@ -8,6 +8,7 @@
         - Both new Vue and Vue.component can have life cycle hooks
             - All of them here: https://vuejs.org/v2/api/#Options-Lifecycle-Hooks
             - See note on mounted and children mounted: https://vuejs.org/v2/api/#mounted
+        - Components should have a single root element, like the container div in 'todo'
         - We also do some API stuff at the bottom
 
 */
