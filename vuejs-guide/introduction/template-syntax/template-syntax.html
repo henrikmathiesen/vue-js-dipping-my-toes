@@ -45,6 +45,14 @@
         <div>
             <a v-bind:href="url" target="_blank">Some link</a>
         </div>
+        <h2>Toggle CSS classes</h2>
+        <div>
+            <button v-on:click="changeB">Change class</button>
+            <span class="static" v-bind:class="{ 'a': isA, 'b': isB }">Hi</span>
+        </div>
+        <div>
+            <span v-bind:class="status">Some text</span>
+        </div>
         <!-- 
             Modifier, calls event.preventDefault()
                 <form v-on:submit.prevent="onSubmit"> ... </form> 
