@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Syntax</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+
+<body>
+    <h1>Template Syntax</h1>
+    <div id="app">
+        <div>{{ message }}</div>
+        <div>
+            <span v-once>{{ message }}</span>
+        </div>
+        <div>
+            <button v-on:click="changeMessage">Change message</button>
+        </div>
+        <div>
+            {{ rawHtml }}
+        </div>
+        <div>
+            <span v-html="rawHtml"></span>
+        </div>
+        <div v-bind:id="someId">
+            This div have a dynamic id
+        </div>
+        <div>
+            <div>
+                <button v-bind:disabled="isButtonDisabled">The button</button>
+            </div>
+            <div>
+                <button v-on:click="toggleDisableButton">Toggle disable on other button</button>
+            </div>
+            <div>
+                {{ 'Button is' + (isButtonDisabled ? '' : ' not') + ' disabled' }}
+            </div>
+        </div>
+        <div>
+            <span v-if="isButtonDisabled">Button is disabled</span>
+            <span v-else="">Button is not disabled</span>
+        </div>
+        <div>
+            <a v-bind:href="url" target="_blank">Some link</a>
+        </div>
+        <!-- 
+            Modifier, calls event.preventDefault()
+                <form v-on:submit.prevent="onSubmit"> ... </form> 
+
+            Shorthands, see
+            https://vuejs.org/v2/guide/syntax.html#Shorthands
+        -->
+    </div>
+
+    <script src="template-syntax.js"></script>
+</body>
+
+</html>
