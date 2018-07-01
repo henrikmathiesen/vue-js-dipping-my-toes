@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computed properties and watchers</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+
+<body>
+    <h1>Computed properties and watchers</h1>
+
+    <div id="app">
+        <div>
+            {{ message }} {{ foo }}
+        </div>
+        <div>
+            reversedMessageMethod() {{ reversedMessageMethod() }}
+        </div>
+        <div>
+            reverseMessageComputed {{ reverseMessageComputed }}
+        </div>
+        <div>
+            <button v-on:click="changeFoo">Change foo</button>
+            <button v-on:click="changeMessage">Change message</button>
+        </div>
+    </div>
+
+    <script src="computed-properties-and-watchers.js"></script>
+</body>
+
+</html>
