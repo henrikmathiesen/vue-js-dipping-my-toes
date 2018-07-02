@@ -4,7 +4,7 @@
         - The logic must be in correct order. Or if this was seperate files, they had to be included / bundled in correct order
         - In a Vue.component, data must be a function returning an object with the data, reason being that all instances should have its own data
             - https://vuejs.org/v2/guide/components.html#data-Must-Be-a-Function
-        - Just like React, we need a key
+        - Just like React, we need a key for repeating items
         - Both new Vue and Vue.component can have life cycle hooks
             - All of them here: https://vuejs.org/v2/api/#Options-Lifecycle-Hooks
             - See note on mounted and children mounted: https://vuejs.org/v2/api/#mounted

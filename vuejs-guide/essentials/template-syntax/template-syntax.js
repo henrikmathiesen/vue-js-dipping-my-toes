@@ -52,7 +52,7 @@ var vm = new Vue({
     }
 });
 
-// <template> can be used as an insisible wrapper
+// <template> can be used as an invisible wrapper
 // https://vuejs.org/v2/guide/conditional.html#Conditional-Groups-with-v-if-on-lt-template-gt
 
 // important about key on elements
