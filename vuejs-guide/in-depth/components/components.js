@@ -19,6 +19,10 @@
         app-some-component-a and app-some-component-b are locally registered.
         "In these cases, you can define your components as plain JavaScript objects
         Then define the components you’d like to use in a components option"
+
+    DYNAMIC & ASYNC
+        https://vuejs.org/v2/guide/components-dynamic-async.html
+        Keep Alive (dont destroy component): https://vuejs.org/v2/guide/components-dynamic-async.html#keep-alive-with-Dynamic-Components
 */
 
 // File

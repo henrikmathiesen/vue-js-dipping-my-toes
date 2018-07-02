@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Props</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</head>
+
+<body>
+    <h1>Props</h1>
+
+    <div id="app">
+        <app-something the-something="Static text" v-bind:the-title="theTitle" v-bind:age="age" v-bind:is-correct="isCorrect"></app-something>
+    </div>
+
+    <script src="props.js"></script>
+</body>
+
+</html>
