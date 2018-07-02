@@ -14,6 +14,9 @@
         - Can use slots as content projection / transclusion
             - https://vuejs.org/v2/guide/components.html#Content-Distribution-with-Slots
             - https://vuejs.org/v2/guide/components-slots.html
+            - Can get to them from code with: this.$slots.default(?)
+                - https://vuejs.org/v2/guide/render-function.html#Basics
+                - Read up on it...
 
         - Using components as special elements like tr in a table
             - https://vuejs.org/v2/guide/components.html#DOM-Template-Parsing-Caveats
@@ -117,6 +120,8 @@ var vm = new Vue({
     methods: {
         changeName: function () {
             this.test.name = 'Benke';
+
+            // this.$data will point to the data object
         }
     }
 });

@@ -23,6 +23,13 @@
     DYNAMIC & ASYNC
         https://vuejs.org/v2/guide/components-dynamic-async.html
         Keep Alive (dont destroy component): https://vuejs.org/v2/guide/components-dynamic-async.html#keep-alive-with-Dynamic-Components
+            - See hooks for keep alive: https://vuejs.org/v2/api/#activated
+
+    SEE ALSO EDGE CASES
+        https://vuejs.org/v2/guide/components-edge-cases.html
+        https://vuejs.org/v2/guide/components-edge-cases.html#Element-amp-Component-Access
+        https://vuejs.org/v2/guide/components-edge-cases.html#Accessing-the-Parent-Component-Instance
+        https://vuejs.org/v2/guide/components-edge-cases.html#Accessing-Child-Component-Instances-amp-Child-Elements
 */
 
 // File
