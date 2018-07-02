@@ -71,3 +71,6 @@ var vm = new Vue({
 
 // Conditionally render a list item VS conditionaly render the whole loop
 // https://vuejs.org/v2/guide/list.html#v-for-with-v-if
+
+// Enter/Leave & List Transitions
+// https://vuejs.org/v2/guide/transitions.html
