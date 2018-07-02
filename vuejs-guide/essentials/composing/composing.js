@@ -13,6 +13,7 @@
 
         - Can use slots as content projection / transclusion
             - https://vuejs.org/v2/guide/components.html#Content-Distribution-with-Slots
+            - https://vuejs.org/v2/guide/components-slots.html
 
         - Using components as special elements like tr in a table
             - https://vuejs.org/v2/guide/components.html#DOM-Template-Parsing-Caveats
